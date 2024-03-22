@@ -1,0 +1,68 @@
+*{
+   margin:0;
+   padding: 0;
+}
+body {
+    margin-top: 30px;
+    background: #ffedba;
+    overflow: hidden;
+ }
+ h1{
+   color: #6d3c11;
+   text-align: center;
+ }
+ #wrapper {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ 
+ #game {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .carta {
+    width: 100px;
+    height: 140px;
+    margin:15px;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border: 15px solid #ccc;
+    border-radius: 20px;
+ }
+ 
+ .carta.activa {
+    transform: rotateY(180deg);
+ }
+ 
+ .carta div {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    pointer-events: none;
+ }
+ 
+ .carta .anverso {
+    background: #6d3c1179;
+    transform: rotateY( 180deg );
+    color: black;
+    font-size: 6rem;
+ }
+ 
+ .carta .reverso {
+    background: url(imagenes/1.png) center / contain no-repeat;
+    background-color: #6d3c1179;
+ }
+
+ 
